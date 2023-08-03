@@ -17,5 +17,5 @@ In order to read the file contents, I used the <code>.read()</code> method to co
 
 ![image](https://github.com/mikeal-12/File-handling-using-Python-algorithms/assets/72464155/c5f14d56-de60-4148-a01d-2245b2dee366)
 
-
+When using an <code>.open()</code> function that includes the argument <code>r</code> for <code>read</code>, I can call the <code>.read()</code> function in the body of the <code>with</code> statement. The <code>.read()</code> method converts the file into a string and allows me to read it. I applied the <code>.read()</code> method to the file variable identified in the <code>with</code> statement. Then, I assigned the string output of this method to the variable <code>ip_addresses</code>. 
 
