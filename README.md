@@ -27,3 +27,9 @@ In order to remove individual IP addresses from the allow list, I needed it to b
 ![image](https://github.com/mikeal-12/File-handling-using-Python-algorithms/assets/72464155/df69f99c-d06c-434d-b50c-dc5ce5beeff0)
 
 The <code>.split()</code> function is called by appending it to a string variable. It works by converting the contents of a string to a list. The purpose of splitting <code>ip_addresses</code> into a list is to make it easier to remove IP addresses from the allow list. By default, the <code>.split()</code> function splits the text by whitespace into list elements. In this algorithm, the <code>.split()</code> function takes the data stored in the variable <code>ip_addresses</code>, which is a string of IP addresses that are each separated by a whitespace, and it converts this string into a list of IP addresses. To store this list, I reassigned it back to the variable <code>ip_addresses</code>.
+
+## Iterate through the remove list
+A key part of my algorithm involves iterating through the IP addresses that are elements in the <code>remove_list</code>. To do this, I incorporated a <code>for loop</code>:
+
+![image](https://github.com/mikeal-12/File-handling-using-Python-algorithms/assets/72464155/bfc2773b-df1c-47f8-8ab5-0ec9302d9cc7)
+
