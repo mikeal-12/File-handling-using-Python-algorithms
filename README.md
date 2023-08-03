@@ -33,3 +33,4 @@ A key part of my algorithm involves iterating through the IP addresses that are 
 
 ![image](https://github.com/mikeal-12/File-handling-using-Python-algorithms/assets/72464155/bfc2773b-df1c-47f8-8ab5-0ec9302d9cc7)
 
+The <code>for loop</code> in Python repeats code for a specified sequence. The overall purpose of the <code>for loop</code> in a Python algorithm like this is to apply specific code statements to all elements in a sequence. The <code>for</code> keyword starts the <code>for loop</code>. It is followed by the loop variable <code>element</code> and the keyword <code>in</code>. The keyword <code>in</code> indicates to iterate through the sequence <code>ip_addresses</code> and assign each value to the loop variable <code>element</code>. 
