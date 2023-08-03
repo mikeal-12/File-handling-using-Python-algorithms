@@ -19,3 +19,8 @@ In order to read the file contents, I used the <code>.read()</code> method to co
 
 When using an <code>.open()</code> function that includes the argument <code>r</code> for <code>read</code>, I can call the <code>.read()</code> function in the body of the <code>with</code> statement. The <code>.read()</code> method converts the file into a string and allows me to read it. I applied the <code>.read()</code> method to the file variable identified in the <code>with</code> statement. Then, I assigned the string output of this method to the variable <code>ip_addresses</code>. 
 
+In summary, this code reads the contents of the <code>allow_list.txt</code> file into a string format that allows me to later use the string to organize and extract data in my Python program.
+
+## Converting the string into a list
+In order to remove individual IP addresses from the allow list, I needed it to be in list format. Therefore, I next used the <code>.split()</code> method to convert the <code>ip_addresses</code> string into a list:
+
