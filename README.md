@@ -40,7 +40,13 @@ My algorithm requires removing any IP address from the allow list, <code>ip_addr
 
 ![image](https://github.com/mikeal-12/File-handling-using-Python-algorithms/assets/72464155/03a142b5-772b-4be1-98f2-2290a872ae1a)
 
-
 First, within my for loop, I created a conditional that evaluated whether or not the loop variable element was found in the <code>ip_addresses</code> list. I did this because applying <code>.remove()</code> to elements that were not found in <code>ip_addresses</code> would result in an error. 
 
 Then, within that conditional, I applied <code>.remove()</code> to ip_addresses. I passed in the loop variable element as the argument so that each IP address that was in the <code>remove_list</code> would be removed from <code>ip_addresses</code>.
+
+## Updating the file with the revised list of IP addresses 
+As a final step in my algorithm, I needed to update the allow list file with the revised list of IP addresses. To do so, I first needed to convert the list back into a string. I used the <code>.join()</code> method for this:
+
+![image](https://github.com/mikeal-12/File-handling-using-Python-algorithms/assets/72464155/a749b3d1-250b-4882-a7d3-32364579929e)
+
+The <code>.join()</code> method combines all items in an iterable into a string. The <code>.join()</code> method is applied to a string containing characters that will separate the elements in the iterable once joined into a string. In this algorithm, I used the <code>.join()</code> method to create a string from the list <code>ip_addresses</code> so that I could pass it in as an argument to the <code>.write()</code> method when writing to the file <code>allow_list.txt</code>. I used the string <code>\n</code> as the separator to instruct Python to place each element on a new line. 
