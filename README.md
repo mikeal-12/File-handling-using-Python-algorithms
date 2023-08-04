@@ -28,9 +28,13 @@ In order to remove individual IP addresses from the allow list, I needed it to b
 
 The <code>.split()</code> function is called by appending it to a string variable. It works by converting the contents of a string to a list. The purpose of splitting <code>ip_addresses</code> into a list is to make it easier to remove IP addresses from the allow list. By default, the <code>.split()</code> function splits the text by whitespace into list elements. In this algorithm, the <code>.split()</code> function takes the data stored in the variable <code>ip_addresses</code>, which is a string of IP addresses that are each separated by a whitespace, and it converts this string into a list of IP addresses. To store this list, I reassigned it back to the variable <code>ip_addresses</code>.
 
-## Iterate through the remove list
+## Iterating through the remove list
 A key part of my algorithm involves iterating through the IP addresses that are elements in the <code>remove_list</code>. To do this, I incorporated a <code>for loop</code>:
 
 ![image](https://github.com/mikeal-12/File-handling-using-Python-algorithms/assets/72464155/bfc2773b-df1c-47f8-8ab5-0ec9302d9cc7)
 
 The <code>for loop</code> in Python repeats code for a specified sequence. The overall purpose of the <code>for loop</code> in a Python algorithm like this is to apply specific code statements to all elements in a sequence. The <code>for</code> keyword starts the <code>for loop</code>. It is followed by the loop variable <code>element</code> and the keyword <code>in</code>. The keyword <code>in</code> indicates to iterate through the sequence <code>ip_addresses</code> and assign each value to the loop variable <code>element</code>. 
+
+## Removing IP addresses that are on the remove list
+My algorithm requires removing any IP address from the allow list, <code>ip_addresses</code>, that is also contained in <code>remove_list</code>. As there were'nt any duplicates in <code>ip_addresses</code>, I was able to use the following code to do this:
+
