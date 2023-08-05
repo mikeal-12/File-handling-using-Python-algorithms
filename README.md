@@ -50,3 +50,9 @@ As a final step in my algorithm, I needed to update the allow list file with the
 ![image](https://github.com/mikeal-12/File-handling-using-Python-algorithms/assets/72464155/a749b3d1-250b-4882-a7d3-32364579929e)
 
 The <code>.join()</code> method combines all items in an iterable into a string. The <code>.join()</code> method is applied to a string containing characters that will separate the elements in the iterable once joined into a string. In this algorithm, I used the <code>.join()</code> method to create a string from the list <code>ip_addresses</code> so that I could pass it in as an argument to the <code>.write()</code> method when writing to the file <code>allow_list.txt</code>. I used the string <code>\n</code> as the separator to instruct Python to place each element on a new line. 
+
+Then, I used another with statement and the <code>.write()</code> method to update the file:
+
+![image](https://github.com/mikeal-12/File-handling-using-Python-algorithms/assets/72464155/d2c6c638-9cea-4a51-a9ae-1c336e22e180)
+
+
