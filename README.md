@@ -55,4 +55,6 @@ Then, I used another with statement and the <code>.write()</code> method to upda
 
 ![image](https://github.com/mikeal-12/File-handling-using-Python-algorithms/assets/72464155/d2c6c638-9cea-4a51-a9ae-1c336e22e180)
 
+This time, I used a second argument of <code>w</code> with the <code>open()</code> function in my <code>with</code> statement. This argument indicates that I want to open a file to write over its contents. When using this argument <code>w</code>, I can call the <code>.write()</code> function in the body of the <code>with</code> statement. The <code>.write()</code> function writes string data to a specified file and replaces any existing file content.
 
+In this case I wanted to write the updated allow list as a string to the file <code>allow_list.txt</code>. This way, the restricted content will no longer be accessible to any IP addresses that were removed from the allow list. To rewrite the file, I appended the <code>.write()</code> function to the file object file that I identified in the with statement. I passed in the <code>ip_addresses</code> variable as the argument to specify that the contents of the file specified in the <code>with</code> statement should be replaced with the data in this variable.
